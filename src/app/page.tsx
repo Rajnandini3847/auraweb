@@ -1,11 +1,11 @@
-import ChatInput from '../components/ChatInput';
-import HistorySidebar from '../components/HistorySidebar';
+import ChatInput from '@/components/ChatInput';
+import HistorySidebar from '@/components/HistorySidebar';
 import {  UserCircle} from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen bg-zinc-950 ">
       {/* History Button */}
       <HistorySidebar/>
       

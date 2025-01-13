@@ -1,6 +1,9 @@
 'use client';
 import React, { useRef, useState } from "react";
 import { ImageIcon, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button"
+
+
 
 const ChatInput = () => {
     const fileInputRef = useRef(null);
@@ -45,13 +48,13 @@ const ChatInput = () => {
                 />
                 
                 {/* Upload icon */}
-                <button 
+                <Button 
                     onClick={handleUploadClick}
                     className="p-1 hover:bg-zinc-800 rounded-full transition-colors" 
                     title="Add an image"
                 >
                     <ImageIcon size={20} className="text-zinc-400"/>
-                </button>
+                </Button>
                 
                 {/* Input text */}
                 <input 
