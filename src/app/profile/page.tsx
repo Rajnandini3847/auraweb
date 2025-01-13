@@ -1,10 +1,16 @@
-{/* Main prompt input + model selector */}
+// src/app/profile/page.tsx
 import React from "react";
+//import ProfilePictureUploader from "../../components/ProfilePictureUploader";
+import ProfilePicture from "../../components/ProfilePicture";
 
 const ProfilePage = () => {
-    return (
-        <div className='left-10'>This is your profile page</div>
-    );
+  return (
+        <div className="bg-black">
+          <div>
+            <ProfilePicture />
+          </div>
+        </div>
+  );
 };
 
 export default ProfilePage;
