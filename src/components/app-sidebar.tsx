@@ -3,7 +3,7 @@ import {
     SidebarContent,
     SidebarGroup,
     SidebarGroupContent,
-    SidebarGroupLabel,
+    SidebarHeader,
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
@@ -43,8 +43,8 @@ import {
     return (
         <Sidebar>
             <SidebarContent>
+                <SidebarHeader>Aura</SidebarHeader>
                 <SidebarGroup>
-                    <SidebarGroupLabel>Aura</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (

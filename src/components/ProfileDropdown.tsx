@@ -10,7 +10,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { UserCircle } from 'lucide-react';
+import { User } from 'lucide-react';
 import Link from "next/link";
 
 const ProfileDropdown = () => {
@@ -18,7 +18,7 @@ const ProfileDropdown = () => {
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <Button className="fixed right-8 top-4 p-2 rounded-full hover:bg-slate-50 hover:shadow-md transition-all">
-                    <UserCircle size={24} className="text-gray-600"/>
+                    <User size={24} className="text-gray-600"/>
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56">
