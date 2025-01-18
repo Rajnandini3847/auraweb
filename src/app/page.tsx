@@ -1,3 +1,4 @@
+import { HomepageSpline } from "@/components/HomepageSpline";
 import HowSection from "@/components/HowSection";
 import ProfileSection from "@/components/ProfileSection";
 import { Button } from "@/components/ui/button";
@@ -6,7 +7,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <>
+    
+    <div className="min-h-screen  px-4 sm:px-6 md:px-8 lg:px-12">
       {/* Header */}
       <header className="  absolute top-4 left-4 right-4 z-50 shadow-md ">
         <div className="container mx-auto px-20 py-4 flex items-center justify-between">
@@ -22,21 +25,22 @@ export default function Home() {
           </Button>
         </div>
       </header>
-
+      
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
+      <HomepageSpline />
         <div className="max-w-[90rem] mx-auto">
           <div className="text-center space-y-8 mb-16">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter pt-10">
               Your Ultimate LLM Chat
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-[800px] mx-auto">
-              Put your API and use all your favourite models at one place
+              Put your API Keys and use all your favourite models at 1 place 
             </p>
           </div>
 
           {/* Demo Video Container */}
-          <div className="relative aspect-video max-w-[1000px] mx-auto rounded-xl overflow-hidden bg-muted">
+          <div className="relative aspect-video max-w-[1000px] mx-auto rounded-xl overflow-hidden bg-muted pt-10">
             {/* Placeholder for video */}
             <div className="absolute inset-0 flex items-center justify-center">
               <Button
@@ -58,5 +62,6 @@ export default function Home() {
       <HowSection />
       <ProfileSection />
     </div>
+    </>
   );
 }

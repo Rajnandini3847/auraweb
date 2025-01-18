@@ -48,13 +48,13 @@ const ChatInput = () => {
                 />
                 
                 {/* Upload icon */}
-                <Button 
+                <button 
                     onClick={handleUploadClick}
-                    className="p-1 hover:bg-zinc-800 rounded-full transition-colors" 
+                    className="p-1   transition-colors" 
                     title="Add an image"
                 >
-                    <ImageIcon size={20} className="text-zinc-400"/>
-                </Button>
+                    <ImageIcon size={20} className=""/>
+                </button>
                 
                 {/* Input text */}
                 <input 
