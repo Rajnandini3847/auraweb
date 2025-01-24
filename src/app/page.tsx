@@ -1,4 +1,4 @@
-import { HomepageSpline } from "@/components/HomepageSpline"
+//import { HomepageSpline } from "@/components/HomepageSpline"
 //import { Header } from "@/components/Header"
 import HowSection from "@/components/HowSection"
 import ProfileSection from "@/components/ProfileSection"
@@ -20,14 +20,14 @@ export default function Home() {
            <Sparkle className="w-6 h-7  text-yellow-500" />  AURA 
           </Link>
           <Button asChild size="lg">
-            <Link href="/chat">Try Now</Link>
+            <Link href="/register">Try Now</Link>
           </Button>
         </div>
       </header>
       
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
-        <HomepageSpline />
+        {/*<HomepageSpline />*/}
         <div className="max-w-[90rem] mx-auto">
           <div className="text-center space-y-8 mb-16">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter pt-10">
