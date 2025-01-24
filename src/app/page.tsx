@@ -1,14 +1,29 @@
 import { HomepageSpline } from "@/components/HomepageSpline"
-import { Header } from "@/components/Header"
+//import { Header } from "@/components/Header"
 import HowSection from "@/components/HowSection"
 import ProfileSection from "@/components/ProfileSection"
 import { Button } from "@/components/ui/button"
 import { Play } from "lucide-react"
+import { Sparkle } from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div className="min-h-screen px-4 sm:px-6 md:px-8 lg:px-12">
-      <Header />
+       <header className="  absolute top-4 left-4 right-4 z-50 shadow-md ">
+        <div className="container mx-auto px-20 py-4 flex items-center justify-between">
+          <Link
+            href="/"
+            className="text-2xl font-bold tracking-tighter hover:opacity-90 transition-opacity flex gap-2"
+            aria-label="AURA - Home"
+          >
+           <Sparkle className="w-6 h-7  text-yellow-500" />  AURA 
+          </Link>
+          <Button asChild size="lg">
+            <Link href="/chat">Try Now</Link>
+          </Button>
+        </div>
+      </header>
       
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">

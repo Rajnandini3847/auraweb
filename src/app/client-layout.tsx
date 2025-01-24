@@ -8,7 +8,7 @@ import {
   SidebarTrigger,
   SidebarInset,
 } from "@/components/ui/sidebar";
-import { AuthProvider } from "@/components/AuthProvider";
+import { AuthProvider } from "@/components/Providers";
 
 export default function ClientLayout({
   children,
