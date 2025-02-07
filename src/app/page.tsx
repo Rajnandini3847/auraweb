@@ -26,7 +26,7 @@ export default function Home() {
       </header>
       
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+     <section className="container mx-auto px-4 py-16 md:py-24"> 
         {/*<HomepageSpline />*/}
         <div className="max-w-[90rem] mx-auto">
           <div className="text-center space-y-8 mb-16">
