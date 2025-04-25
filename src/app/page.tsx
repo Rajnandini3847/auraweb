@@ -1,5 +1,6 @@
 //import { HomepageSpline } from "@/components/HomepageSpline"
 //import { Header } from "@/components/Header"
+import FeatureSection from "@/components/FeatureSection"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Sparkle, Bot, Key, Zap, ArrowRight, Command } from "lucide-react"
@@ -53,7 +54,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section 
       <section className="py-20 px-4 bg-black">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 text-white">Key Features</h2>
@@ -82,6 +83,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
+      <FeatureSection />
 
       
 
