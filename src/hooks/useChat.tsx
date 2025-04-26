@@ -9,7 +9,9 @@ export function useChat() {
   const [currentConversation, setCurrentConversation] = useState<Conversation | null>(null);
   const [apiKeys, setApiKeys] = useState<ApiKey[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [models, setModels] = useState<LLMModel[]>([
+  const [models 
+    //setModels
+] = useState<LLMModel[]>([
     {
       id: "gpt-4",
       name: "GPT-4",
