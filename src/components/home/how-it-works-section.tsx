@@ -35,7 +35,7 @@ export function HowItWorksSection() {
 
   return (
     <section id="how-it-works" className="py-16 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-8 md:px-12">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="w-full lg:w-1/2 space-y-8">
             <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none bg-primary/10 hover:bg-primary/20">

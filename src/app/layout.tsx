@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Auraweb",
+  title: "AuraChat",
   description: "All you AI models in one place",
 };
 
