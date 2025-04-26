@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ClientLayout from "./client-layout";
+//import ClientLayout from "./client-layout";
 
 
 
@@ -17,23 +17,37 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AuraChat",
-  description: "All you AI models in one place",
+  description: "All your AI models in one place",
 };
+
+// export default function RootLayout({
+//   children,
+// }: Readonly<{
+//   children: React.ReactNode;
+// }>) {
+
+ 
+//   return (
+//     <html lang="en" suppressHydrationWarning>
+//       <body
+//         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+//       >
+//         <ClientLayout>{children}</ClientLayout>
+//       </body>
+//     </html>
+//   );
+// }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) 
 
- 
+{
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
-      >
-        <ClientLayout>{children}</ClientLayout>
-      </body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>{children}</body>
     </html>
   );
 }

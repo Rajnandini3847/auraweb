@@ -1,68 +1,68 @@
-import {
-    Sidebar,
-    SidebarContent,
-    SidebarGroup,
-    SidebarGroupContent,
-    SidebarHeader,
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem,
-  } from "@/components/ui/sidebar";
+// import {
+//     Sidebar,
+//     SidebarContent,
+//     SidebarGroup,
+//     SidebarGroupContent,
+//     SidebarHeader,
+//     SidebarMenu,
+//     SidebarMenuButton,
+//     SidebarMenuItem,
+//   } from "@/components/ui/sidebar";
 
-  import { Search, Settings, Plus, Archive, MessageSquare, } from "lucide-react";
+//   import { Search, Settings, Plus, Archive, MessageSquare, } from "lucide-react";
 
 
-  const items = [
-    {
-        title: "New Chat",
-        url: "#",
-        icon: Plus,
-      },
-    {
-        title: "Archive",
-        url: "#",
-        icon: Archive,
-    },
-    {
-        title: "Search",
-        url: "#",
-        icon: Search,
-    },
-    {
-        title: "Settings",
-        url: "#",
-        icon: Settings,
-    },
-    {
-        title: "Message",
-        url: "#",
-        icon: MessageSquare,
-      },
-  ]
-  export function AppSidebar() {
-    return (
-        <Sidebar>
-            <SidebarContent>
-                <SidebarHeader>Aura</SidebarHeader>
-                <SidebarGroup>
-                    <SidebarGroupContent>
-                        <SidebarMenu>
-                            {items.map((item) => (
-                                <SidebarMenuItem key={item.title}>
-                                    <SidebarMenuButton asChild>
-                                        <a href={item.url}>
-                                            <item.icon />
-                                            <span>{item.title}</span>
-                                        </a>
-                                    </SidebarMenuButton>
-                                </SidebarMenuItem>
-                            ))}
-                        </SidebarMenu>
-                    </SidebarGroupContent>
-                </SidebarGroup>
-            </SidebarContent>
-        </Sidebar>
-    );
-  };
+//   const items = [
+//     {
+//         title: "New Chat",
+//         url: "#",
+//         icon: Plus,
+//       },
+//     {
+//         title: "Archive",
+//         url: "#",
+//         icon: Archive,
+//     },
+//     {
+//         title: "Search",
+//         url: "#",
+//         icon: Search,
+//     },
+//     {
+//         title: "Settings",
+//         url: "#",
+//         icon: Settings,
+//     },
+//     {
+//         title: "Message",
+//         url: "#",
+//         icon: MessageSquare,
+//       },
+//   ]
+//   export function AppSidebar() {
+//     return (
+//         <Sidebar>
+//             <SidebarContent>
+//                 <SidebarHeader>Aura</SidebarHeader>
+//                 <SidebarGroup>
+//                     <SidebarGroupContent>
+//                         <SidebarMenu>
+//                             {items.map((item) => (
+//                                 <SidebarMenuItem key={item.title}>
+//                                     <SidebarMenuButton asChild>
+//                                         <a href={item.url}>
+//                                             <item.icon />
+//                                             <span>{item.title}</span>
+//                                         </a>
+//                                     </SidebarMenuButton>
+//                                 </SidebarMenuItem>
+//                             ))}
+//                         </SidebarMenu>
+//                     </SidebarGroupContent>
+//                 </SidebarGroup>
+//             </SidebarContent>
+//         </Sidebar>
+//     );
+//   };
 
-  export default AppSidebar;
+//   export default AppSidebar;
